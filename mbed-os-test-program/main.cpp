@@ -1,6 +1,6 @@
 #include "mbed.h"
 
-DigitalOut myled(LED2);
+DigitalOut myled(LED3);
 DigitalOut myled2(LED1);
 
 int main()
@@ -12,7 +12,36 @@ int main()
       ThisThread::sleep_for(1s);
 
       myled.write(0);  // set LED2 pin to low
+      myled2.write(0); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+      myled.write(1);  // set LED2 pin to low
+      myled2.write(0); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+      myled.write(0);  // set LED2 pin to low
+      myled2.write(0); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+
+      myled.write(1);  // set LED2 pin to low
+      myled2.write(0); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+
+      myled.write(0);  // set LED2 pin to low
+      myled2.write(0); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+
+      myled.write(0);  // set LED2 pin to low
       myled2.write(1); // set LED1 pin to high
       ThisThread::sleep_for(1s);
+
+      myled.write(0);  // set LED2 pin to low
+      myled2.write(0); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+      myled.write(0);  // set LED2 pin to low
+      myled2.write(1); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+      myled.write(0);  // set LED2 pin to low
+      myled2.write(0); // set LED1 pin to high
+      ThisThread::sleep_for(1s);
+
    }
 }
